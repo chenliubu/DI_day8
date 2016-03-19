@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>stock_query</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<div>
+  			<h1>Stock Query</h1>
+		</div>
+		
+		<form action="{{ url_for('index') }}" method=post>
+			<dl>
+			  <dt>Stock Ticker: (e.g. GOOG)
+			  <dd><input type=text name=ticker>
+			  <select name="cars">
+    			<option value="1">Open</option>
+    			<option value="2">High</option>
+				<option value="3">Low</option>
+    			<option value="4">Close</option>
+    			<option value="5">Volume</option>
+    			<option value="6">Ex-Dividend</option>
+				<option value="7">Split Ratio</option>
+    			<option value="8">Adj. Open</option>
+    			<option value="9">Adj. High</option>
+    			<option value="10">Adj. Low</option>
+				<option value="11">Adj. Close</option>
+    			<option value="12">Adj. Volume</option>
+  			  </select>
+			  <dd><input type=submit value=submit>
+			</dl>
+
+		</form>
+		
+	</body>
+</html>
